@@ -38,7 +38,7 @@ A full-stack web application demonstrating modern authentication patterns with R
 ### 1. Clone Repository
 ```bash
 git clone <repository-url>
-cd Hono_with_Firebase_Auth
+cd secure-fullstack-web-platform
 ```
 
 ### 2. Backend Setup
