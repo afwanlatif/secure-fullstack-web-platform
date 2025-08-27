@@ -63,34 +63,40 @@ npm start
 
 ### Backend Environment Variables (.env)
 ```env
-# Firebase Admin SDK
-FIREBASE_PROJECT_ID=your_firebase_project_id
-FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nyour_private_key_here\n-----END PRIVATE KEY-----\n"
-FIREBASE_CLIENT_EMAIL=firebase-adminsdk-xxxxx@your_project_id.iam.gserviceaccount.com
-
 # Server Configuration
 PORT=3001
-NODE_ENV=development
 
-# Database
-DATABASE_URL=postgresql://username:password@localhost:5432/database_name
+# Database Configuration
+DATABASE_NAME=your_database_name
+DB_USERNAME=your_db_username
+DB_PASSWORD=your_db_password
+DB_HOST=localhost
+DB_DIALECT=postgres
 
-# CORS
-ALLOWED_ORIGINS=http://localhost:3000
+# Firebase Admin SDK Configuration
+TYPE=service_account
+PROJECT_ID=your_firebase_project_id
+PRIVATE_KEY_ID=your_private_key_id
+PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nyour_private_key_here\n-----END PRIVATE KEY-----\n"
+CLIENT_EMAIL=firebase-adminsdk-xxxxx@your_project_id.iam.gserviceaccount.com
+CLIENT_ID=your_client_id
+AUTH_URI=https://accounts.google.com/o/oauth2/auth
+TOKEN_URI=https://oauth2.googleapis.com/token
+AUTH_PROVIDER_X509_CERT_URL=https://www.googleapis.com/oauth2/v1/certs
+CLIENT_X509_CERT_URL=https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-xxxxx%40your_project_id.iam.gserviceaccount.com
+UNIVERSE_DOMAIN=googleapis.com
 ```
 
 ### Frontend Environment Variables (.env)
 ```env
 # Firebase Configuration
-REACT_APP_FIREBASE_API_KEY=your_firebase_api_key_here
-REACT_APP_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
-REACT_APP_FIREBASE_PROJECT_ID=your_firebase_project_id
-REACT_APP_FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
-REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
-REACT_APP_FIREBASE_APP_ID=your_firebase_app_id
-
-# Backend API
-REACT_APP_API_URL=http://localhost:3001
+REACT_APP_API_KEY=your_firebase_api_key_here
+REACT_APP_AUTH_DOMAIN=your_project_id.firebaseapp.com
+REACT_APP_PROJECT_ID=your_firebase_project_id
+REACT_APP_STORAGE_BUCKET=your_project_id.firebasestorage.app
+REACT_APP_MESSAGING_SENDER_ID=your_messaging_sender_id
+REACT_APP_APP_ID=your_firebase_app_id
+REACT_APP_MEASUREMENT_ID=your_measurement_id
 ```
 
 ## 🏗 Project Structure
